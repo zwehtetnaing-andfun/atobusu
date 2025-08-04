@@ -1,0 +1,38 @@
+# Default configuration for Atobusu application
+
+# Directory settings
+template_directory: "templates"
+output_directory: "output"
+
+# GUI framework selection
+gui_framework: "tkinter"  # Options: "tkinter", "pyqt5"
+
+# Character conversion rules
+character_conversion_rules:
+  quotes:
+    '"': '"'  # Straight quote to left double quotation mark (U+201C)
+  symbols:
+    '※': '※'  # Keep as-is
+  circled_numbers:
+    '①': '&#9312;'
+    '②': '&#9313;'
+    '③': '&#9314;'
+    '④': '&#9315;'
+    '⑤': '&#9316;'
+    '⑥': '&#9317;'
+    '⑦': '&#9318;'
+    '⑧': '&#9319;'
+    '⑨': '&#9320;'
+    '⑩': '&#9321;'
+  special_symbols:
+    '◎': '&#9678;'
+    'ハート': '&#9825;'
+    '♪': '&#9834;'
+
+# Logging configuration
+log_level: "INFO"
+log_file: null  # Set to a file path to enable file logging
+
+# Template processing settings
+template_encoding: "utf-8"
+output_encoding: "utf-8"

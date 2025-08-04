@@ -1,0 +1,23 @@
+template_type: page
+source_file: sample_data.yaml
+title: YAML Test Page
+product_name: YAML Widget
+product_code: YW-2025-001
+category: Testing
+content: This is content from a YAML file with "quotes" and special symbols ◎ and ♪
+post_date: 2025/01/15
+rating: 5
+reviewer_name: YAML Tester
+data:
+  - title: YAML Sample 1
+    content: First YAML sample with ◎ symbol
+    product_code: YW-001
+    date: 2025/01/15
+  - title: YAML Sample 2
+    content: Second YAML sample with ♪ symbol
+    product_code: YW-002
+    date: 2025/01/16
+metadata:
+  created_at: "2025-01-15T10:00:00Z"
+  version: "1.0"
+  generator: "Atobusu YAML Test"

@@ -1,0 +1,38 @@
+{
+  "template_type": "page",
+  "source_file": "sample_data_better.json",
+  "title": "Sample Product Review",
+  "product_name": "Amazing Widget Pro",
+  "product_code": "AWP-2025-001",
+  "category": "Electronics",
+  "content": "This is a comprehensive review of the Amazing Widget Pro. The product features excellent build quality with \"premium\" materials and special symbols like ◎ for quality assurance and ♪ for sound quality.",
+  "post_date": "2025/01/15",
+  "update_date": "2025/01/16",
+  "rating": 4,
+  "reviewer_name": "Test Reviewer",
+  "data": [
+    {
+      "title": "Sample Page Title",
+      "content": "This is sample content with \"quotes\" and special characters ◎",
+      "product_code": "PROD-001",
+      "date": "2025/01/15",
+      "description": "A sample page for testing the CLI interface",
+      "author": "Atobusu CLI Test",
+      "tags": ["test", "sample", "cli"]
+    },
+    {
+      "title": "Another Sample",
+      "content": "More content with ♪ music symbol and ハート heart",
+      "product_code": "PROD-002", 
+      "date": "'25/01/16",
+      "description": "Second sample item",
+      "author": "Test User",
+      "tags": ["example", "demo"]
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-01-15T10:00:00Z",
+    "version": "1.0",
+    "generator": "Atobusu CLI Test"
+  }
+}

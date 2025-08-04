@@ -1,0 +1,94 @@
+<!-- Mixed HTML/PHP Template -->
+<link href="/review/review.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+/* 個別ページ追加記述が必要な場合記述
+------------------------------------------------------- */
+</style>
+
+<section class="wrap_article">
+
+<!-- sec00 -->
+<section id="sec00">
+
+<!-- メインタイトル部 -->
+<h2><img src="/review/images/review_women_sec00_mainimg.png" alt="{{title|default('商品レビュー')}}"></h2>
+<!-- //メインタイトル部 -->
+
+<section class="self_intro">
+<dl>
+    <dt><img src="/review/images/{{reviewer_name|default('reviewer')}}_prof.jpg" alt="{{reviewer_name|default('レビュアー名')}}"></dt>
+    <dd><span class="fw-b"><span class="red p-r5">【体験者】</span>{{reviewer_name|default('レビュアー名')}}</span><br>
+    {{reviewer_description|default('レビュアー紹介文')}}
+    </dd>
+</dl>
+
+<div class="check_btn"><a href="/page_review.php" target="_blank" rel="noopener noreferrer">商品とエロ動画の体験レビュアー一覧</a></div>
+</section>
+
+<!--　dot_line　-->
+<svg width="100%" height="25" viewBox="0 -5 700 25" class="dot_line">
+<line x1="0" y1="10" x2="700" y2="10"></line>
+</svg>
+<!--　//dot_line　-->
+
+<section>
+<h4 class="h4_tit">{{section_title|default('商品名が入ります')}}</h4>
+<p>{{section_content|default('基本文章が入ります')}}</p>
+</section>
+
+</section>
+<!-- //sec00 -->
+
+<!-- sec01 -->
+<section id="sec01">
+<h3 class="h3_tit"><img src="/review/images/review_women_sec01_h3_tit.png" alt="まずは、商品チェック"></h3>
+
+<h4 class="h4_tit">{{section1_title|default('商品名が入ります')}}</h4>
+
+<figure><img src="/review/{{product_code|default('product_code')}}/images/{{reviewer_name|default('reviewer')}}_{{product_code|default('product_code')}}_01.jpg" alt="商品画像"></figure>
+
+<p>{{section1_content|default('基本文章が入ります')}}</p>
+
+</section>
+<!-- //sec01 -->
+
+<!-- sec02 -->
+<section id="sec02">
+<h3 class="h3_tit"><img src="/review/images/review_women_sec02_h3_tit.png" alt="そして、モニタリング！"></h3>
+
+<h4 class="h4_tit">{{section2_title|default('商品名が入ります')}}</h4>
+
+<figure><img src="/review/{{product_code|default('product_code')}}/images/{{reviewer_name|default('reviewer')}}_{{product_code|default('product_code')}}_02.jpg" alt="商品画像"></figure>
+
+<p>{{section2_content|default('基本文章が入ります')}}</p>
+
+</section>
+<!-- //sec02 -->
+
+<!-- sec03 -->
+<section id="sec03">
+<h3 class="h3_tit"><img src="/review/images/review_women_sec03_h3_tit.png" alt="レポートの感想"></h3>
+
+<h4 class="h4_tit">{{section3_title|default('商品名が入ります')}}</h4>
+
+<figure><img src="/review/{{product_code|default('product_code')}}/images/{{reviewer_name|default('reviewer')}}_{{product_code|default('product_code')}}_03.jpg" alt="商品画像"></figure>
+
+<p>{{section3_content|default('基本文章が入ります')}}</p>
+
+<p>
+<!-- 絵文字参照サンプル -->
+{{emoji_content|default('💦<br>💦<br>💦<br>🙇‍♀️<br>❤️')|safe}}
+</p>
+
+<div class="rating_score">
+    <span class="rating">オススメ評価：{{rating|default(5)}} 
+        <span class="star5_rating" data-rate="{{rating|default(5)}}"></span>
+    </span>
+</div>
+
+</section>
+<!-- //sec03 -->
+
+</section>
+<!-- //wrap_article -->

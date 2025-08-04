@@ -1,0 +1,59 @@
+<!-- Index Template for Product Listings -->
+<div class="product_index">
+    {% if title %}
+    <h2 class="index_title">{{title}}</h2>
+    {% endif %}
+    
+    <ul class="product_list">
+        {% for item in items %}
+        <li class="product_item">
+            <dl>
+                <dt class="item_img">
+                    <a href="/review-{{item.product_code|default('product')}}" target="_self" 
+                       data-gtm_event_name="exReview" 
+                       data-gtm_event_category="最新更新順" 
+                       data-gtm_event_label="{{reviewer_name|default('レビュアー')}}_{{item.product_name|default('商品名')}}">
+                        <img src="{{item.image_url|default('/images/no-image.jpg')}}" 
+                             alt="{{item.product_name|default('商品画像')}}">
+                    </a>
+                </dt>
+                <dd class="item_user_box">
+                    <a href="/review-{{item.product_code|default('product')}}" target="_self"
+                       data-gtm_event_name="exReview" 
+                       data-gtm_event_category="最新更新順" 
+                       data-gtm_event_label="{{reviewer_name|default('レビュアー')}}_{{item.product_name|default('商品名')}}">
+                        <p class="item_name">{{item.product_name|default('商品名')}}</p>
+                    </a>
+                    <div class="item_date">
+                        <div class="item_post_date">{{item.post_date|default('2025/00/00')}}</div>
+                        <div class="item_post_name">全体：{{reviewer_name|default('レビュアー名')}}</div>
+                    </div>
+                    <div class="item_star_box">
+                        <div class="item_star_tag">おすすめ度</div>
+                        <div class="item_star">
+                            {% for i in range(item.rating|default(0)) %}★{% endfor %}
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <!-- Simple List Format -->
+    {% if simple_list %}
+    <ul class="simple_product_list">
+        {% for item in items %}
+        <li>
+            <a href="/review-{{item.product_code|default('product')}}" target="_self" 
+               data-gtm_event_name="exReview" 
+               data-gtm_event_category="レビュアー一覧" 
+               data-gtm_event_label="{{reviewer_name|default('レビュアー')}}_{{item.product_name|default('商品名')}}">
+                {{item.product_name|default('商品名')}}
+            </a> 
+            【{{item.category|default('カテゴリ')}}】{{item.short_date|default("'25/00/00")}} UP
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
